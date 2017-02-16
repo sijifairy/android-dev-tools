@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "process_items": [
+    {
+      "id": 101,
+      "describe": "打开Debug中的Layout Bounds",
+      "intent_id": 1,
+      "action_id": [
+        101
+      ]
+    },
+    {
+      "id": 201,
+      "describe": "打开Debug中的GPU overdraw",
+      "intent_id": 1,
+      "action_id": [
+        201,
+        202
+      ]
+    },
+    {
+      "id": 202,
+      "describe": "关闭Debug中的GPU overdraw",
+      "intent_id": 1,
+      "action_id": [
+        201,
+        203
+      ]
+    },
+    {
+      "id": 401,
+      "describe": "打开Debug中的Force RTL layout",
+      "intent_id": 1,
+      "action_id": [
+        401
+      ]
+    },
+    {
+      "id": 501,
+      "describe": "打开Debug中的GPU Rendering profile",
+      "intent_id": 1,
+      "action_id": [
+        501,
+        502
+      ]
+    },
+    {
+      "id": 502,
+      "describe": "关闭Debug中的GPU Rendering profile",
+      "intent_id": 1,
+      "action_id": [
+        501,
+        203
+      ]
+    },
+    {
+      "id": 701,
+      "describe": "Stay awake",
+      "intent_id": 1,
+      "action_id": [
+        701
+      ]
+    },
+    {
+      "id": 801,
+      "describe": "cpu usage",
+      "intent_id": 1,
+      "action_id": [
+        801
+      ]
+    },
+    {
+      "id": 901,
+      "describe": "kill activities",
+      "intent_id": 1,
+      "action_id": [
+        901
+      ]
+    },
+    {
+      "id": 1001,
+      "describe": "wait for debugger",
+      "intent_id": 1,
+      "action_id": [
+        1001
+      ]
+    }
+  ]
+}

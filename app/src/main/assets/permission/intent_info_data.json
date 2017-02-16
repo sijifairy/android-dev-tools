@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "intent_items":[
+    {
+      "id":1,
+      "describe":"打开Debug",
+      "package":"com.android.settings",
+      "action":"android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+    }
+  ]
+}

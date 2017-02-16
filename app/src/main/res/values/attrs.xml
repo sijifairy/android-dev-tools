@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ItemStyle">
+        <attr name="iconSrc" format="reference"/>
+        <attr name="iconText" format="string"/>
+    </declare-styleable>
+
+</resources>

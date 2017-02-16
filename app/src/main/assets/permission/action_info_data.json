@@ -1,0 +1,243 @@
+{
+  "version": 3,
+  "action_items": [
+    {
+      "id": 1,
+      "describe": "用于点击确定按钮",
+      "need_wait_window": true,
+      "need_wait_time": 1000,
+      "locate_node": {
+        "id_name": "android:id/button1",
+        "class_name": "android.widget.Button"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 2,
+      "describe": "用于点击确定按钮(MIUi)",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "允许",
+          "Accept",
+          "允許"
+        ]
+      },
+      "click_node": {
+        "class_name": "android.widget.CheckedTextView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 3,
+      "describe": "用于点击HTC确定按钮-SENSE6.0",
+      "need_wait_window": true,
+      "need_wait_time": 1000,
+      "locate_node": {
+        "id_name": "com.htc:id/button1",
+        "class_name": "android.widget.Button"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 4,
+      "describe": "用于点击HTC确定按钮-SENSE7.0",
+      "need_wait_window": true,
+      "need_wait_time": 1000,
+      "locate_node": {
+        "id_name": "com.android.settings:id/button1",
+        "class_name": "android.widget.Button"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 101,
+      "describe": "点击LayoutBounds",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "layout bounds",
+          "layout boundaries",
+          "布局边界"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 201,
+      "describe": "点击GPU overdraw",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "GPU overdraw",
+          "过度渲染",
+          "过度绘制"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 202,
+      "describe": "用于点击overdraw areas",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "overdraw areas",
+          "过度渲染区域",
+          "过度绘制区域"
+        ]
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 203,
+      "describe": "用于点击off",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "Off",
+          "关"
+        ]
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 401,
+      "describe": "点击force RTL",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "RTL layout",
+          "从右到左"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 501,
+      "describe": "点击GPU Rendering profile",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "GPU rendering profile",
+          "GPU 显示配置"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 502,
+      "describe": "用于点击show as bars",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "as bars",
+          "条的形式"
+        ]
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 701,
+      "describe": "点击stay awake",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "stay awake",
+          "不锁定屏幕"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 801,
+      "describe": "点击cpu usage",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "cpu usage",
+          "CPU使用"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 901,
+      "describe": "点击kill activity",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "keep activities",
+          "不保留活动"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    },
+    {
+      "id": 1001,
+      "describe": "点击wait for debugger",
+      "need_wait_window": true,
+      "locate_node": {
+        "find_texts": [
+          "wait for debugger",
+          "等待调试器"
+        ]
+      },
+      "scroll_node": {
+        "class_name": "android.widget.ListView"
+      },
+      "operation_node": {
+        "behavior": "click"
+      }
+    }
+  ]
+}

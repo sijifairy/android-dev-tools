@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dev Tools</string>
+    <string name="accessibility_service_description">"Turn 'ON' the switch on the top right. ↗️⊙.⊙↗️
+With accessibility authorization, DevTools can help you extend battery life more than twice as much!
+
+Note: You may receive a system reminder about authorizing DevTools. DevTools will NEVER collect ANY of your information."</string>
+    <string name="title_debug">Debug</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

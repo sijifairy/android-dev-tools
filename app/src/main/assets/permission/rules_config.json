@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "rule_items": [
+    {
+      "rom": 36,
+      "title": "ZTE-正在获取通知栏权限",
+      "process_id": 202,
+      "type": 2,
+      "priority": 1
+    },
+    {
+      "rom": 36,
+      "title": "ZTE-正在获取应用活动信息",
+      "process_id": 407,
+      "type": 4,
+      "priority": 1
+    }
+  ]
+}
