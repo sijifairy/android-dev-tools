@@ -12,7 +12,9 @@ public enum PermissionType {
     TYPE_STAY_AWAKE(7),
     TYPE_SHOW_CPU_USAGE(8),
     TYPE_KILL_ACTIVITY(9),
-    TYPE_WAIT_DEBUGGER(10);
+    TYPE_WAIT_DEBUGGER(10),
+    TYPE_SYSTEM_SETTINGS(11),
+    TYPE_DEVELOPPER_OPTIONS(12);
 
     private int value;
 

@@ -8,6 +8,7 @@
 
     <!-- Drawer Content UI -->
     <LinearLayout
+        android:id="@+id/drawer_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -23,108 +24,14 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            android:elevation="6dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:theme="@style/ToolBarStyle"/>
 
-        <ScrollView
-            android:id="@+id/activity_main"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/PrimaryText"
-                    android:text="@string/title_debug"/>
-
-                <LinearLayout
-                    style="@style/LineWrapper">
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_gpu_overdraw_on"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_overdraw_on"
-                        app:iconText="Overdraw ON"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_gpu_overdraw_off"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_overdraw_off"
-                        app:iconText="Overdraw OFF"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_layout_bounds"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_layout_bounds"
-                        app:iconText="Layout Bounds"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_force_rtl"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_force_rtl"
-                        app:iconText="Force RTL"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    style="@style/LineWrapper">
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_gpu_rendering_bar"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_gpu_bar"
-                        app:iconText="GPU Bar"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_gpu_rendering_off"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_gpu_off"
-                        app:iconText="GPU OFF"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_stay_awake"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_stay_awake"
-                        app:iconText="Stay Awake"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_cpu_usage"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_cpu_usage"
-                        app:iconText="CPU Usage"/>
-                </LinearLayout>
-
-                <LinearLayout style="@style/LineWrapper">
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_kill_activity"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_kill_activity"
-                        app:iconText="Kill Activity"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_wait_for_debugger"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_wait_debugger"
-                        app:iconText="Wait Debugger"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_goto_developer_options"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_developer"
-                        app:iconText="Dev Options"/>
-
-                    <com.lizhe.devtools.view.ItemView
-                        android:id="@+id/tv_goto_system_settings"
-                        style="@style/ItemStyle"
-                        app:iconSrc="@drawable/icon_settings"
-                        app:iconText="Sys Settings"/>
-                </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <!-- Side navigation drawer UI -->
@@ -133,27 +40,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white">
-
-            <!-- Header -->
-            <!--<include-->
-            <!--android:id="@+id/navigationview_header"-->
-            <!--layout="@layout/layout_setting_main_activity_navigation_header" />-->
-
-            <!--<ScrollView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/navigationview_header"-->
-            <!--android:clipToPadding="false"-->
-            <!--android:paddingBottom="10dp">-->
-
-            <!--</ScrollView>-->
-
-        </RelativeLayout>
-
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

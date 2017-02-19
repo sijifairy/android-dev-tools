@@ -7,4 +7,15 @@ Note: You may receive a system reminder about authorizing DevTools. DevTools wil
     <string name="title_debug">Debug</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+
+    <string name="overdraw">GPU Overdraw</string>
+    <string name="force_rtl">Force RTL</string>
+    <string name="layout_bounds">Layout Bounds</string>
+    <string name="gpu_rendering">GPU Rendering</string>
+    <string name="stay_awake">Stay Awake</string>
+    <string name="cpu_usage">Show CPU Usage</string>
+    <string name="kill_activity">Kill Activity</string>
+    <string name="wait_debugger">Wait For Debugger</string>
+    <string name="system_setting">Go to system settings</string>
+    <string name="developer_option">Go to developer options</string>
 </resources>

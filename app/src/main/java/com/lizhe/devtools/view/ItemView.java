@@ -45,16 +45,18 @@ public class ItemView extends LinearLayout {
         mIconText = a.getString(R.styleable.ItemStyle_iconText);
 
         ImageView icon = new ImageView(getContext());
-        LinearLayout.LayoutParams params = new LayoutParams(CommonUtils.pxFromDp(48), CommonUtils.pxFromDp(48));
+        LinearLayout.LayoutParams params = new LayoutParams(CommonUtils.pxFromDp(56), CommonUtils.pxFromDp(56));
         icon.setLayoutParams(params);
         icon.setImageDrawable(mIconDrawable);
         icon.setScaleType(ImageView.ScaleType.CENTER_CROP);
         addView(icon);
 
         TextView tv = new TextView(getContext());
-        tv.setLayoutParams(new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        LinearLayout.LayoutParams params1 = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params1.topMargin=CommonUtils.pxFromDp(4);
+        tv.setLayoutParams(params1);
         tv.setGravity(Gravity.CENTER_HORIZONTAL);
-        tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);
+        tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
         tv.setTextColor(Color.BLACK);
         tv.setText(mIconText);
         tv.setSingleLine();

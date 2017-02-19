@@ -8,7 +8,6 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Handler;
-import android.support.v7.widget.CardView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +31,7 @@ public class AboutView extends FrameLayout {
 
     private LayoutInflater layoutInflater;
 
-    private CardView cvHolder;
+    private View vContainer;
     private CircleImageView ivPhoto;
     private ImageView ivCover;
     private TextView tvName;
@@ -73,7 +72,7 @@ public class AboutView extends FrameLayout {
     }
 
     private void bind() {
-        cvHolder = (CardView) findViewById(R.id.card_holder);
+        vContainer = findViewById(R.id.about_container);
         ivPhoto = (CircleImageView) findViewById(R.id.photo);
         ivCover = (ImageView) findViewById(R.id.cover);
         tvName = (TextView) findViewById(R.id.name);
@@ -106,7 +105,7 @@ public class AboutView extends FrameLayout {
         this.iconColor = bundle.getIconColor();
 
         if (bundle.getBackgroundColor() != 0)
-            cvHolder.setCardBackgroundColor(bundle.getBackgroundColor());
+            vContainer.setBackgroundColor(bundle.getBackgroundColor());
 
         appHolder.setVisibility(bundle.getAppName().isEmpty() ? GONE : VISIBLE);
 
@@ -165,7 +164,7 @@ public class AboutView extends FrameLayout {
     }
 
     private int getCardColor() {
-        return cvHolder.getCardBackgroundColor().getDefaultColor();
+        return Color.TRANSPARENT;
     }
 
     private int getIconColor() {
