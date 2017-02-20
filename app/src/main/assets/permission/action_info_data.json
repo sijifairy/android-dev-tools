@@ -146,6 +146,7 @@
       "need_wait_window": true,
       "locate_node": {
         "find_texts": [
+          "Profile GPU rendering",
           "GPU rendering profile",
           "GPU 显示配置"
         ]
