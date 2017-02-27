@@ -17,6 +17,8 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.lizhe.devtools.accessibility.PermissionType;
 import com.lizhe.devtools.itemview.DragItemTouchHelper;
 import com.lizhe.devtools.itemview.ItemDragAdapter;
@@ -36,34 +38,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initToolbar();
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("70041B50AE1A6FC739EE8D7EB363AF33").build();
+        mAdView.loadAd(adRequest);
+
+        initAccessories();
 
         initDrawerLayout();
 
         initAboutView();
 
         initRecyclerView();
-
-//        final ColorTransitionView colorTransitionView = (ColorTransitionView) findViewById(R.id.color_transition_view);
-//        colorTransitionView.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                if (event.getAction() == MotionEvent.ACTION_UP
-//                        || event.getAction() == MotionEvent.ACTION_CANCEL) {
-//                    if (event.getRawX() <= colorTransitionView.getMeasuredWidth() / 3) {
-//                        colorTransitionView.startColorTransition(0);
-//                    } else if (event.getRawX() <= colorTransitionView.getMeasuredWidth() * 2 / 3) {
-//                        colorTransitionView.startColorTransition(1);
-//                    } else {
-//                        colorTransitionView.startColorTransition(2);
-//                    }
-//                }
-//                return true;
-//            }
-//        });
     }
 
-    private void initToolbar() {
+    private void initAccessories() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
@@ -72,11 +60,9 @@ public class MainActivity extends AppCompatActivity {
                 CommonUtils.getStatusBarHeight(this)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window window = getWindow();
-            // Translucent status bar
             window.setFlags(
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            // Translucent navigation bar
             window.setFlags(
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION,
                     WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);

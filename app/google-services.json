@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "449607956232",
+    "firebase_url": "https://devtools-e2f29.firebaseio.com",
+    "project_id": "devtools-e2f29",
+    "storage_bucket": "devtools-e2f29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449607956232:android:98e3b00e989ca534",
+        "android_client_info": {
+          "package_name": "com.lizhe.devtools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449607956232-v66v3bt665feahrknnj1jc4h8fhm2j4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMtd8B-93cHT8WAaxJwAGoMHNyIn-HmH4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

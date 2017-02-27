@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Dev Tools</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1805361097474752/9592576620</string>
     <string name="accessibility_service_description">"Turn 'ON' the switch on the top right. ↗️⊙.⊙↗️
 With accessibility authorization, DevTools can help you extend battery life more than twice as much!
 
